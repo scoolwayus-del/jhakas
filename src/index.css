@@ -53,3 +53,14 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
+/* Smooth scroll behavior for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation styling */
+nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}

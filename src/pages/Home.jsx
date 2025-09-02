@@ -3,8 +3,15 @@ import Video from '../components/home/Video'
 import HomeHeroText from '../components/home/HomeHeroText'
 import HomeBottomText from '../components/home/HomeBottomText'
 import WhyUsSection from '../components/home/WhyUsSection'
+import PortfolioSection from '../components/home/PortfolioSection'
 import StatsSection from '../components/home/StatsSection'
+import ServicesSection from '../components/home/ServicesSection'
+import ProcessSection from '../components/home/ProcessSection'
+import CTASection from '../components/home/CTASection'
+import AboutSection from '../components/home/AboutSection'
+import ContactSection from '../components/home/ContactSection'
 import Footer from '../components/home/Footer'
+import Navigation from '../components/common/Navigation'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -30,6 +37,9 @@ const Home = () => {
   })
   return (
     <div className='text-white relative'>
+      {/* Navigation */}
+      <Navigation />
+      
       {/* Fixed video background */}
       <div className='h-screen w-screen fixed top-0 left-0 z-0'>
         <Video />
@@ -48,8 +58,26 @@ const Home = () => {
         {/* Why Us Section */}
         <WhyUsSection />
         
+        {/* Portfolio Section */}
+        <PortfolioSection />
+        
         {/* Stats Section */}
         <StatsSection />
+        
+        {/* Services Section */}
+        <ServicesSection />
+        
+        {/* Process Section */}
+        <ProcessSection />
+        
+        {/* Call-to-Action Section */}
+        <CTASection />
+        
+        {/* About Us Section */}
+        <AboutSection />
+        
+        {/* Contact Section */}
+        <ContactSection />
         
         {/* Footer Section */}
         <Footer />

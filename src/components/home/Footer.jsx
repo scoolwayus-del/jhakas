@@ -65,16 +65,38 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className='space-y-3'>
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href}
-                    className='font-[font1] text-base lg:text-lg text-gray-300 hover:text-[#D3FD50] transition-colors duration-300 hover:underline'
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link 
+                  to="/contact"
+                  className='font-[font1] text-base lg:text-lg text-gray-300 hover:text-[#D3FD50] transition-colors duration-300 hover:underline'
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/privacy"
+                  className='font-[font1] text-base lg:text-lg text-gray-300 hover:text-[#D3FD50] transition-colors duration-300 hover:underline'
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/terms"
+                  className='font-[font1] text-base lg:text-lg text-gray-300 hover:text-[#D3FD50] transition-colors duration-300 hover:underline'
+                >
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/affiliates"
+                  className='font-[font1] text-base lg:text-lg text-gray-300 hover:text-[#D3FD50] transition-colors duration-300 hover:underline'
+                >
+                  Affiliates
+                </Link>
+              </li>
             </ul>
           </div>
 

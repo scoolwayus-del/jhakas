@@ -98,7 +98,7 @@ const WhyUsSection = () => {
   ]
 
   return (
-    <section ref={sectionRef} className='min-h-screen bg-white text-black relative z-30'>
+    <section id="why-us" className='min-h-screen bg-white text-black relative z-30'>
       <div className='container mx-auto lg:px-12 px-6 lg:py-24 py-16'>
         {/* Section Header */}
         <div className='text-center mb-16'>

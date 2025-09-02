@@ -108,7 +108,7 @@ const StatsSection = () => {
   }, [hasAnimated])
 
   return (
-    <section ref={sectionRef} className='min-h-screen bg-gray-50 text-black relative z-30'>
+    <section id="stats" ref={sectionRef} className='min-h-screen bg-gray-50 text-black relative z-30'>
       <div className='container mx-auto lg:px-12 px-6 lg:py-24 py-16'>
         {/* Section Header */}
         <div className='text-center mb-16'>

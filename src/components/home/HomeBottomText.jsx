@@ -10,9 +10,6 @@ const HomeBottomText = () => {
       <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] hover:bg-[#D3FD50] hover:text-black lg:h-44 h-32 flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase transition-all duration-300 cursor-pointer group'>
         <Link className='text-[6vw] lg:mt-6 group-hover:scale-105 transition-transform duration-300' to='/projects'>Projects</Link>
       </div>
-      <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] hover:bg-[#D3FD50] hover:text-black lg:h-44 h-32 flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase transition-all duration-300 cursor-pointer group'>
-        <Link className='text-[6vw] lg:mt-6 group-hover:scale-105 transition-transform duration-300' to='/agence'>agence</Link>
-      </div>
     </div>
   )
 }

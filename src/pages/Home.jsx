@@ -5,16 +5,10 @@ import HomeBottomText from '../components/home/HomeBottomText'
 import WhyUsSection from '../components/home/WhyUsSection'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { NavbarColorContext } from '../context/NavContext'
 
 const Home = () => {
-  const [navColor, setNavColor] = useContext(NavbarColorContext)
   const heroSectionRef = useRef(null)
 
-  // Set navbar color to white for home page
-  useEffect(() => {
-    setNavColor('white')
-  }, [setNavColor])
 
   useGSAP(() => {
     // Smooth fade-in animation for hero content

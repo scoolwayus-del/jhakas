@@ -10,22 +10,14 @@ const Video = () => {
           alt="Creative workspace background"
         />
         
-        {/* Main video with proper loop handling */}
+        {/* Main video with native loop handling */}
         <video 
           className='h-full w-full object-cover relative z-10' 
           autoPlay 
           loop 
           muted 
           playsInline
-          preload="metadata"
-          onLoadedData={(e) => {
-            // Ensure smooth looping by setting currentTime slightly before end
-            e.target.addEventListener('timeupdate', () => {
-              if (e.target.currentTime >= e.target.duration - 0.1) {
-                e.target.currentTime = 0;
-              }
-            });
-          }}
+          preload="auto"
           onError={(e) => {
             // Hide video on error, fallback image will show
             e.target.style.display = 'none';

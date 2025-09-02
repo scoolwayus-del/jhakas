@@ -3,6 +3,8 @@ import Video from '../components/home/Video'
 import HomeHeroText from '../components/home/HomeHeroText'
 import HomeBottomText from '../components/home/HomeBottomText'
 import WhyUsSection from '../components/home/WhyUsSection'
+import StatsSection from '../components/home/StatsSection'
+import Footer from '../components/home/Footer'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -45,6 +47,12 @@ const Home = () => {
         
         {/* Why Us Section */}
         <WhyUsSection />
+        
+        {/* Stats Section */}
+        <StatsSection />
+        
+        {/* Footer Section */}
+        <Footer />
       </div>
     </div>
   )

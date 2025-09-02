@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import { Link } from 'react-router-dom'
 
 const WhyUsSection = () => {
   const sectionRef = useRef(null)
@@ -142,11 +143,11 @@ const WhyUsSection = () => {
         {/* Call to Action */}
         <div className='text-center mt-20'>
           <div className='inline-flex items-center gap-4'>
-            <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] hover:bg-[#D3FD50] hover:text-black lg:h-16 h-12 flex items-center px-6 lg:px-8 border-black rounded-full uppercase transition-all duration-300 cursor-pointer group'>
+            <Link to='/projects' className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] hover:bg-[#D3FD50] hover:text-black lg:h-16 h-12 flex items-center px-6 lg:px-8 border-black rounded-full uppercase transition-all duration-300 cursor-pointer group'>
               <span className='font-[font2] text-lg lg:text-xl group-hover:scale-105 transition-transform duration-300'>
-                Découvrir nos projets
+                Our Portfolio
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
